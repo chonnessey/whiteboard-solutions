@@ -1,0 +1,34 @@
+//Input: [7, 9, "hi", 12, "hi" 7, 53]
+
+//Output: [7, 9, "hi", 12, 53]
+
+// remove duplicates of an array without using the filter function
+// Use a Set in order to count the instance of an element within the array
+/*
+{7: 0 + 1
+  9: 0 + 1
+}
+const removeDupes = (array = []) => {
+  let outputArr = [...new Set(array)]
+  return outputArr;
+}
+
+// remove duplicates using the filter function
+// loop through the given array using filter
+// element and the position 
+// compare the value of element through each iteration to the position
+// create an empty array to push the first instance of the element
+// if the element is equal to the position using indexOf
+// element was the index of the array
+// position was the value
+
+
+const removeDupesFilter = (array = []) => {
+  outputArr = [];
+  array.filter(function(element, position) {
+    if (array.indexOf(element) === position) {
+      outputArr.push(element.valueOf(array))
+    }
+  })
+  return outputArr;
+}
